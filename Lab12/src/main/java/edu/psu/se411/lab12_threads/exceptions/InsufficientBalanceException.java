@@ -1,0 +1,9 @@
+package edu.psu.se411.lab12_threads.exceptions;
+
+public class InsufficientBalanceException extends Exception {
+    private static final long serialVersionUID = 1L;
+
+    public InsufficientBalanceException(String accountId) {
+        super("Insufficient balance in account " + accountId);
+    }
+}
